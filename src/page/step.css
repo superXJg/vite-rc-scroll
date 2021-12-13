@@ -1,0 +1,24 @@
+ul {
+  margin-top: 100px;
+}
+ul li {
+  position: relative;
+  margin: 0 auto;
+  width: 20px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid rgba(221, 221, 221, 1);
+  border-radius: 4px;
+  list-style: none;
+}
+ul li span {
+  position: absolute;
+  color: #ccc;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: 16.5px;
+  left: 0;
+  top: 0;
+  /* transform: translate(-50%, 0); */
+  transition: transform 500ms ease-in-out;
+}

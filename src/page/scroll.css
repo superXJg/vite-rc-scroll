@@ -1,0 +1,69 @@
+html {
+  font-size: 14px;
+}
+.slide {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.page {
+  /* width: 100vw; */
+  height: 100vh;
+}
+.page1 {
+  background-color: cadetblue;
+}
+.page2 {
+  background-color: coral;
+}
+.slide-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: red;
+  /* height: 100%; */
+}
+.slide-left {
+  flex: 0 0 51%;
+  position: relative;
+  height: 100vh;
+}
+.slide-left-box {
+  background-color: aqua;
+  height: 100vh;
+}
+.slide-right {
+  flex: 1;
+}
+.right-item {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  height: 100vh;
+}
+.demo {
+  position: fixed;
+  left: 10px;
+  top: 50px;
+}
+.page {
+  display: flex;
+}
+.progress {
+  position: absolute;
+  top: 50%;
+  margin-top: -164px;
+  right: -88%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.progress-line {
+  height: 240px;
+  width: 2px;
+  background-color: #ccc;
+}
+.progress-line-inner {
+  width: 2px;
+  background-color: blue;
+}
