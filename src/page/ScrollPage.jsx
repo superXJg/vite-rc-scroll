@@ -1,6 +1,7 @@
 import ScrollAnim from "rc-scroll-anim";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import StepNumber from "./StepNumber";
+import "../lib/swiper.min.css";
 import "./scroll.css";
 const ScrollParallax = ScrollAnim.Parallax;
 const ScrollElement = ScrollAnim.Element;
@@ -31,18 +32,17 @@ const ScrollPage = () => {
     setCss({});
     // setWrapCss({});
   };
+  useEffect(() => {}, []);
   return (
     <div className="page-wraper">
       <div className="page page1">
-        page1 往下滚模仿官网首页结构方便熟悉 rc-scroll-anim 750px设计稿下 1rem
-        100px
-        <div>{/* <StepNumber /> */}</div>
+        <div>
+          page1 往下滚模仿官网首页结构方便熟悉 rc-scroll-anim 750px设计稿下 1rem
+          100px
+        </div>
       </div>
-      <div className="page page2">
-        page2
-        {/* <div className="demo">xxxxx</div> */}
-      </div>
-      <ScrollElement
+      <div className="page page2">page2</div>
+      {/* <ScrollElement
         className="slide"
         id="box"
         //   style={{ height: "1600px" }}
@@ -214,6 +214,60 @@ const ScrollPage = () => {
           <div className="right-item">right3</div>
           <div className="right-item">right4</div>
         </ScrollParallax>
+      </ScrollElement> */}
+      <ScrollElement
+        className="window"
+        id="tabs"
+        //   style={{ height: "1600px" }}
+      >
+        {/* <div>demo</div> */}
+        <div style={{ display: "flex" }}>
+          <ScrollParallax
+            location="tabs"
+            animation={[
+              {
+                playScale: [0, 1],
+                y: 0,
+              },
+            ]}
+            style={{
+              transform: " translateY(100px)",
+            }}
+          >
+            <div className="inner-box">xxx</div>
+          </ScrollParallax>
+          <ScrollParallax
+            location="tabs"
+            animation={[
+              {
+                playScale: [0, 1],
+                y: 0,
+              },
+            ]}
+            style={{
+              transform: " translateY(100px)",
+            }}
+          >
+            <div className="inner-box">xxx</div>
+          </ScrollParallax>
+        </div>
+
+        {/* <ScrollParallax
+          location="tabs"
+          // className="inner-box"
+          animation={[
+            {
+              playScale: [0, 1],
+              scaleX: 1,
+              scaleY: 1,
+            },
+          ]}
+          style={{
+            transform: "scale(0) translateY(0)",
+          }}
+        >
+          <div className="inner-box">xxx</div>
+        </ScrollParallax> */}
       </ScrollElement>
       <div className="page">page last</div>
       <div className="page">page last</div>

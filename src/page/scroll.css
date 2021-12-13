@@ -3,6 +3,14 @@
   display: flex;
   overflow: hidden;
 }
+.inner-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.window {
+  height: 100vh;
+}
 .page {
   /* width: 100vw; */
   height: 100vh;
