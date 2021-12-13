@@ -34,7 +34,8 @@ const ScrollPage = () => {
   return (
     <div className="page-wraper">
       <div className="page page1">
-        page1 往下滚模仿官网首页结构方便熟悉 rc-scroll-anim
+        page1 往下滚模仿官网首页结构方便熟悉 rc-scroll-anim 750px设计稿下 1rem
+        100px
         <div>{/* <StepNumber /> */}</div>
       </div>
       <div className="page page2">
