@@ -10,13 +10,14 @@
 }
 .window {
   height: 100vh;
+  position: relative;
 }
 .page {
   /* width: 100vw; */
   height: 100vh;
 }
 .page1 {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   width: 5rem;
 }
 .page2 {
@@ -30,7 +31,7 @@
   /* height: 100%; */
 }
 .slide-left {
-  flex: 0 0 51%;
+  flex: 0 0 50%;
   position: relative;
   height: 100vh;
 }
@@ -51,6 +52,11 @@
   left: 10px;
   top: 50px;
 }
+.demo-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
 .page {
   display: flex;
 }
@@ -58,7 +64,7 @@
   position: absolute;
   top: 50%;
   margin-top: -164px;
-  right: -88%;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,4 +78,106 @@
 .progress-line-inner {
   width: 2px;
   background-color: blue;
+}
+.inner-box {
+  width: 156.8px;
+  height: 188.1px;
+}
+.box1 {
+  background-image: linear-gradient(144deg, #8bbeff 0%, #3a8af7 100%);
+  border-radius: 29.26px 29.26px 0 29.26px;
+  border-radius: 29.26px 29.26px 0 29.26px;
+}
+.box2 {
+  background-image: linear-gradient(140deg, #41eab5 0%, #16b886 100%);
+  border-radius: 29.26px 29.26px 29.26px 0;
+  border-radius: 29.26px 29.26px 29.26px 0;
+}
+.box3 {
+  background-image: linear-gradient(154deg, #4c5c84 2%, #2a2f3c 100%);
+  border-radius: 29.26px 0 29.26px 29.26px;
+  border-radius: 29.26px 0 29.26px 29.26px;
+}
+.box4 {
+  background-image: linear-gradient(154deg, #ffba75 0%, #ff8a4a 100%);
+  border-radius: 0 29.26px 29.26px 29.26px;
+  border-radius: 0 29.26px 29.26px 29.26px;
+}
+.mobile-product-title {
+  width: 243px;
+  height: 72px;
+  margin: auto;
+  font-family: Avenir-Heavy;
+  font-weight: Heavy;
+  font-size: 24px;
+  color: #2a2f3c;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 36px;
+}
+.bird-container {
+  width: 138px;
+  height: 138px;
+  border-radius: 70px;
+  background-color: #f5c371;
+}
+.card-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 151px;
+  width: 375px;
+  height: 400px;
+}
+.bird-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  position: relative;
+}
+.swiper-container {
+  width: 375px;
+  height: 100vh;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.page1 {
+  height: 100vh;
+}
+.page2 {
+  height: 100vh;
+  position: relative;
+}
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* background-color: #ccc; */
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
 }

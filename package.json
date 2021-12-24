@@ -8,11 +8,15 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "antd": "^4.17.3",
+    "fastclick": "^1.0.6",
     "gsap": "^3.8.0",
     "lodash": "^4.17.21",
+    "phy-touch": "^0.1.1",
     "rc-scroll-anim": "^2.7.6",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-freeze": "^1.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.0",
